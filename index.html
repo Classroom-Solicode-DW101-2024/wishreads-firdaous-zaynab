@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koutoubia</title>
@@ -9,76 +8,109 @@
     
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <i class="fas fa-book"></i>
-            Koutoubia
-        </div>
-        <i class="fa-solid fa-heart" style="color: #ff6500;"></i>
-    </nav>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/api/placeholder/50/50" alt="">
+                <span>Koutoubia</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Wishlist</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Search Books..." />
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-    <div class="hero">
-        
-        <h1>Find Your Next Book</h1>
-        <p>Stories Rooted in Culture, Pages Filled with Wonder</p>
-        <button>View all</button>
-        
-    </div>
+    <main>
+        <section class="hero">
+            <h1>Find Your Next Book</h1>
+            <p>Stories Rooted in Culture, Pages Filled with Wonder</p>
+            <button>Find It</button>
+        </section>
 
-    <h2 class="section-title">Exclusive</h2>
+        <h2 class="section-title">Exclusive</h2>
+        <div class="books-container">
+            <div class="books-grid">
+                <div class="book-card">
+                    <img src="images/thepsychologyofcomputerprogramming.png" alt="The Alchemist">
+                    <div class="book-title">The psychology of<br> human programming</div>
+                    <div class="book-author">Gerald Weinberg</div>
+                </div>
+                <div class="book-card">
+                    <img src="images/sapiens.png" alt="Sapiens">
+                    <div class="book-title">Sapiens</div>
+                    <div class="book-author">Yuval Noah Harari</div>
+                </div>
+                <div class="book-card">
+                    <img src="images/theprophet.png" alt="The Prophet">
+                    <div class="book-title">The Prophet</div>
+                    <div class="book-author">Kahlil Gibran</div>
+                </div>
+                <div class="book-card">
+                    <img src="images/lepainnu.png" alt="Le Pain Nu">
+                    <div class="book-title">Le Pain Nu</div>
+                    <div class="book-author">Mohamed Choukri</div>
+                </div>
+                <div class="book-card">
+                    <img src="images/thelittleprince.png" alt="The Little Prince">
+                    <div class="book-title">The Little Prince</div>
+                    <div class="book-author">Antoine de Saint-Exupéry</div>
+                </div>
+                <div class="book-card">
+                    <img src="images/seasonofmigrationtothenorth.png" alt="Season of Migration to the North">
+                    <div class="book-title">Season of Migration to the North</div>
+                    <div class="book-author">Tayeb Salih</div>
+                </div>
+                <div class="book-card">
+                    <img src="images/thehouseofthespirits.png" alt="The House of the Spirits">
+                    <div class="book-title">The House of the Spirits</div>
+                    <div class="book-author">Isabel Allende</div>
+                </div>
+                <div class="book-card">
+                    <img src="images/thestranger.png" alt="The Stranger">
+                    <div class="book-title">The Stranger</div>
+                    <div class="book-author">Albert Camus</div>
+                </div>
+                <div class="book-card">
+                    <img src="images/onethousandandonenights.png" alt="One Thousand and One Nights">
+                    <div class="book-title">One Thousand and One Nights</div>
+                    <div class="book-author">Various authors</div>
+                </div>
+                <div class="book-card">
+                    <img src="images/thealchemist.png" alt="The Alchemist">
+                    <div class="book-title">The Alchemist</div>
+                    <div class="book-author">Paulo Coelho</div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <section class="books-grid">
-        <div class="book-card">
-            <img src="/api/placeholder/150/200" alt="The Alchemist">
-            <div class="book-title">The Alchemist</div>
-            <div class="book-author">Paulo Coelho</div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/api/placeholder/50/50" alt="">
+                <span>Koutoublia</span>
+            </div>
+            <div class="contact-info">
+                Koutoublia gives book lover of all ages to a<br>
+                books they can read and loved. Just one free<br>
+                read by the page will!
+            </div>
+            <div class="contact-info">
+                +212111 - 666666<br>
+                contact@gmail.com
+            </div>
+            <div class="copyright">
+                Copyright © 2023 Koutoublia. All Rights Reserved.
+            </div>
         </div>
-        <div class="book-card">
-            <img src="/api/placeholder/150/200" alt="Sapiens">
-            <div class="book-title">Sapiens</div>
-            <div class="book-author">Yuval Noah Harari</div>
-        </div>
-        <div class="book-card">
-            <img src="/api/placeholder/150/200" alt="Prophet">
-            <div class="book-title">Prophet</div>
-            <div class="book-author">Kahlil Gibran</div>
-        </div>
-        <div class="book-card">
-            <img src="/api/placeholder/150/200" alt="Le Pain Nu">
-            <div class="book-title">Le Pain Nu</div>
-            <div class="book-author">Mohamed Choukri</div>
-        </div>
-        <div class="book-card">
-            <img src="/api/placeholder/150/200" alt="The Little Prince">
-            <div class="book-title">The Little Prince</div>
-            <div class="book-author">Antoine de Saint-Exupéry</div>
-        </div>
-        <div class="book-card">
-            <img src="/api/placeholder/150/200" alt="Season of Migration to the North">
-            <div class="book-title">Season of Migration to the North</div>
-            <div class="book-author">Tayeb Salih</div>
-        </div>
-        <div class="book-card">
-            <img src="/api/placeholder/150/200" alt="The House of the Spirits">
-            <div class="book-title">The House of the Spirits</div>
-            <div class="book-author">Isabel Allende</div>
-        </div>
-        <div class="book-card">
-            <img src="/api/placeholder/150/200" alt="The Stranger">
-            <div class="book-title">The Stranger</div>
-            <div class="book-author">Albert Camus</div>
-        </div>
-        <div class="book-card">
-            <img src="/api/placeholder/150/200" alt="One Thousand and One Nights">
-            <div class="book-title">One Thousand and One Nights</div>
-            <div class="book-author">Various authors</div>
-        </div>
-        <div class="book-card">
-            <img src="/api/placeholder/150/200" alt="The Art of Happiness">
-            <div class="book-title">The Art of Happiness</div>
-            <div class="book-author">Dalai Lama and Howard</div>
-        </div>
-    </section>
+    </footer>
 
     <script src="script.js">
     </script>
