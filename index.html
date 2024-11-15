@@ -3,37 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koutoubiaaaaa</title>
+    <title>Koutoubia</title>
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
-    <header>
+    <header class="navbar">
+        <div class="logo">
+            <img src="" alt="">
+            <span>Koutoubia</span>
+        </div>
         <nav>
-            <div class="logo">
-                <img src="/api/placeholder/50/50" alt="">
-                <span>Koutoubia</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Wishlist</a></li>
-            </ul>
-            <div class="search-container">
-                <input type="text" placeholder="Search Books..." />
-                <button type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">MyWishList</a>
         </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search Books ...." class="search-input">
+            <button class="search-button">Search</button>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>Find Your Next Book</h1>
-            <p>Stories Rooted in Culture, Pages Filled with Wonder</p>
-            <button>Find It</button>
-        </section>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Find Your Next <span>Book</span></h1>
+            <p>Stories Rooted in Culture,<br>Pages Filled with Wonder.</p>
+            <button class="hero-button">View all</button>
+        </div>
 
+    </section>
+        <main>
         <h2 class="section-title">Exclusive</h2>
         <div class="books-container">
             <div class="books-grid">
@@ -83,34 +81,104 @@
                     <div class="book-author">Various authors</div>
                 </div>
                 <div class="book-card">
+                    <img src="images/codersatwork.png" alt="Coders At Work">
+                    <div class="book-title">Coders At Work</div>
+                    <div class="book-author">Paulo Coelho</div>
+                </div>
+                <div class="book-card">
                     <img src="images/thealchemist.png" alt="The Alchemist">
                     <div class="book-title">The Alchemist</div>
                     <div class="book-author">Paulo Coelho</div>
+                </div>
+                <div class="book-card">
+                    <img src="images/it.png" alt="It">
+                    <div class="book-title">It</div>
+                    <div class="book-author">Stephen King</div>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="/api/placeholder/50/50" alt="">
-                <span>Koutoublia</span>
+    <!-- Categories -->
+    <section class="categories">
+        <h2>categories</h2>
+        <div class="category-cards">
+            <div class="category-card">
+                <img src="your-icon-url.png" alt="Category Icon">
+                <p>History</p>
             </div>
-            <div class="contact-info">
-                Koutoublia gives book lover of all ages to a<br>
-                books they can read and loved. Just one free<br>
-                read by the page will!
+            <div class="category-card">
+                <img src="your-icon-url.png" alt="Category Icon">
+                <p>Science</p>
             </div>
-            <div class="contact-info">
-                +212111 - 666666<br>
-                contact@gmail.com
+            <div class="category-card">
+                <img src="your-icon-url.png" alt="Category Icon">
+                <p>Psychology</p>
             </div>
-            <div class="copyright">
-                Copyright © 2023 Koutoublia. All Rights Reserved.
+            <div class="category-card">
+                <img src="your-icon-url.png" alt="Category Icon">
+                <p>Fantasy</p>
+            </div>
+            <div class="category-card">
+                <img src="your-icon-url.png" alt="Category Icon">
+                <p>Drama</p>
+            </div>
+            <div class="category-card">
+                <img src="your-icon-url.png" alt="Category Icon">
+                <p>Horror</p>
             </div>
         </div>
+    </section>
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <div class="footer-logo">
+                    <img src="your-logo-url.png" alt="Koutoubia Logo">
+                    <span>Koutoubia</span>
+                </div>
+                <p>Koutoubia draws book lovers of all ages into a community, engage with booklovers and meet their favorite literary personalities.</p>
+                <p><strong>+212</strong> _666666</p>
+                <p>koutoubia@gmail.com</p>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="#">Privacy Policies</a></li>
+                    <li><a href="#">Term of Use</a></li>
+                    <li><a href="#">Term of Shopping</a></li>
+                    <li><a href="#">Copyright Policies</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Category</h4>
+                <ul>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Science</a></li>
+                    <li><a href="#">Psychology</a></li>
+                    <li><a href="#">Fantasy</a></li>
+                    <li><a href="#">Drama</a></li>
+                    <li><a href="#">Horror</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section subscribe">
+                <h4>SUBSCRIBE TO GET UPDATES</h4>
+                <p>Sign up for Newsletter to Get all the information on Events, Offers, Sales and More.</p>
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Enter your mail here...">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright ©2022 Koutoubia. All Rights Reserved.</p>
+        </div>
     </footer>
+    
 
     <script src="script.js">
     </script>
