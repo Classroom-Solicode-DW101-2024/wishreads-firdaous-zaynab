@@ -1,5 +1,4 @@
-{
-    "books": [
+[
       {
         "title": "The Psychology of Computer Programming",
         "description": "This classic work by Gerald M. Weinberg delves into the human aspects of software development. It explores the psychological challenges faced by programmers, such as stress, motivation, and communication. The book discusses how understanding the psychological aspects of programming can lead to better collaboration, more efficient problem-solving, and the overall improvement of the software development process.",
@@ -133,5 +132,4 @@
         "year": "1986"
       }
     ]
-  }
   
