@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
   document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
@@ -35,3 +36,40 @@
     `;
   }
 
+=======
+document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const bookId = params.get("id");
+  
+    fetch("books.json")
+      .then(response => {
+          if (!response.ok) {
+              throw new Error("Error fetching data");
+          }
+          return response.json();
+      })
+      .then(books => {
+          const book = books[bookId];
+          if (book) {
+              displayBookDetails(book);
+          } else {
+              document.getElementById("book-details").innerHTML = "<p>Book not found.</p>";
+          }
+      })
+      .catch(error => console.error(error));
+  });
+  
+  function displayBookDetails(book) {
+    const bookDetailsContainer = document.getElementById("book-details");
+    bookDetailsContainer.innerHTML = `
+        <img src="${book.cover}" alt="${book.title}">
+        <h2>${book.title}</h2>
+        <p><strong>Author:</strong> ${book.author.fullname || "Unknown"}</p>
+        <p><strong>Biography:</strong> ${book.author.biography || "Not available"}</p>
+        <p><strong>Description:</strong> ${book.description || "No description available"}</p>
+        <p><strong>Publication Year:</strong> ${book.year || "N/A"}</p>
+        <a href="index.html" class="btn">Back to Home</a>
+    `;
+  }
+  
+>>>>>>> Stashed changes

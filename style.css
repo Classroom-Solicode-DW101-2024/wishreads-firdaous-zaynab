@@ -1186,3 +1186,43 @@ body {
   }
 
 } */
+
+
+/**BOOK DETAILS**/
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--eerie-black);
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.book-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.book-card h3 {
+  font-size: var(--fs-4);
+  margin: 15px 0 5px;
+  color: var(--maximum-blue-green);
+}
+
+.book-card p {
+  font-size: var(--fs-6);
+  margin: 5px 0;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.book-card span {
+  color: var(--granite-gray);
+  font-size: var(--fs-7);
+}
