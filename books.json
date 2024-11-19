@@ -1,9 +1,9 @@
-{
-    "books": [
+[
+    
       {
         "title": "The Psychology of Computer Programming",
         "description": "This classic work by Gerald M. Weinberg delves into the human aspects of software development. It explores the psychological challenges faced by programmers, such as stress, motivation, and communication. The book discusses how understanding the psychological aspects of programming can lead to better collaboration, more efficient problem-solving, and the overall improvement of the software development process.",
-        "cover": "images/thepsychologyofcomputerprogramming.png",
+        "cover": "https://m.media-amazon.com/images/I/81NbMSt4eTL._AC_UF1000,1000_QL80_.jpg",
         "linkPDF": "https://www.dorsethouse.com/pdf/Dorset-House-psy.pdf",
         "author": {
           "fullname": "Gerald M. Weinberg",
@@ -14,7 +14,7 @@
       {
         "title": "Sapiens: A Brief History of Humankind",
         "description": "In 'Sapiens', Yuval Noah Harari explores the history of humankind from the Stone Age to the 21st century. The book delves into how Homo sapiens came to dominate the Earth, examining the cognitive revolution, the agricultural revolution, the unification of humankind, and the scientific revolution. Harari challenges readers to think about the future of humanity, touching on topics such as artificial intelligence and genetic engineering.",
-        "cover": "images/sapiens.png",
+        "cover": "https://m.media-amazon.com/images/I/712Uo++xK2L._AC_UF1000,1000_QL80_.jpg",
         "linkPDF": "https://www.academia.edu/36744501/Sapiens_A_brief_history_of_humankind",
         "author": {
           "fullname": "Yuval Noah Harari",
@@ -25,7 +25,7 @@
       {
         "title": "The Prophet",
         "description": "The Prophet' is a philosophical and spiritual book by Kahlil Gibran. It is a series of poetic essays on topics such as love, marriage, children, work, freedom, and pain. The book is framed through the story of a prophet, Almustafa, who shares his wisdom with the people of the city of Orphalese before he returns to his homeland. The teachings in 'The Prophet' resonate with deep insights on life and human existence, making it one of Gibran’s most beloved works.",
-        "cover": "images/theprophet.png",
+        "cover": "https://www.bookgeeks.in/wp-content/uploads/2023/03/The-Prophet-by-Khalil-Gibran.jpg",
         "linkPDF": "https://www.kahlilgibran.com/images/The%20Prophet%20Ebook%20by%20Kahlil%20Gibran.pdf",
         "author": {
           "fullname": "Kahlil Gibran",
@@ -36,7 +36,7 @@
       {
         "title": "Le Pain Nuu",
         "description": "'Le Pain Nu' (The Naked Bread) is an autobiographical novel by Moroccan author Mohamed Choukri. The book chronicles Choukri's difficult childhood in Tangier, marked by poverty, hunger, and hardship. It tells the story of a young boy's struggles with his family, society, and his search for meaning in life. Through raw and evocative prose, Choukri portrays the challenges of growing up in a harsh, sometimes brutal environment, making it a powerful exploration of survival and the human spirit.",
-        "cover": "images/lepainnu.png",
+        "cover": "https://alifbata.fr/wp-content/uploads/2020/02/Couv-LE-PAIN-NU-_-bd.jpg",
         "linkPDF": "https://www.scribd.com/doc/80764434/Mohamed-Choukri-Le-Pain-Nu",
         "author": {
           "fullname": "",
@@ -47,7 +47,7 @@
       {
         "title": "The Little Prince",
         "description": "The Little Prince' is a novella and the most famous work of French writer and aviator Antoine de Saint-Exupéry. The book tells the story of a young prince who travels from planet to planet, meeting various strange characters and learning important life lessons along the way. The story is a deep and poignant reflection on human nature, love, loneliness, friendship, and the importance of seeing the world with the eyes of a child. It is often considered a philosophical tale for both children and adults.",
-        "cover": "images/thelittleprince.png",
+        "cover": "https://www.pluggedin.com/wp-content/uploads/2020/01/little-prince-cover-653x1024.jpg",
         "linkPDF": "https://andonovicmilica.files.wordpress.com/2018/07/the_little_prince.pdf",
         "author": {
           "fullname": "Antoine de Saint-Exupéry",
@@ -58,7 +58,7 @@
       {
         "title": "Season of Migration to North",
         "description": "Season of Migration to the North' is a novel by Sudanese author Tayeb Salih, first published in 1966. The story follows the protagonist, who returns to Sudan after studying in Europe, only to become entangled with the mysterious figure of Mustafa Sa'eed, a man with a dark past. The novel explores themes of identity, colonialism, cultural conflict, and the complexities of post-colonial life. It is regarded as one of the most important works of modern Arabic literature.",
-        "cover": "images/seasonofmigrationtothenorth.png",
+        "cover": "https://newbookrecommendation.com/wp-content/uploads/2024/09/Season_of_Migration_to_the_North.webp",
         "linkPDF": "https://www.scribd.com/document/539364348/Season-of-Migration-to-the-North-PDFDrive-2",
         "author": {
           "fullname": "Tayeb Salih ",
@@ -69,7 +69,7 @@
       {
         "title": "The House of the Spirits",
         "description": "The House of the Spirits' is a novel by Chilean author Isabel Allende, first published in 1982. The book blends elements of magical realism and historical fiction, following the lives of the Trueba family over several generations. The story explores themes of love, power, social injustice, and the personal and political turmoil in 20th-century Chile. The novel is both a family saga and a reflection on the social and political struggles in Latin America. Allende’s use of magical realism brings an enchanting depth to her portrayal of the human experience.",
-        "cover": "images/thehouseofthespirits.png",
+        "cover": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781501117015/the-house-of-the-spirits-9781501117015_hr.jpg",
         "linkPDF": "https://books-library.net/files/books-library.online-01150916Fz1J5.pdf",
         "author": {
           "fullname": "Isabel Allende",
@@ -80,7 +80,7 @@
       {
         "title": "The Stranger",
         "description": "The Stranger' is a philosophical novel by French author Albert Camus, first published in 1942. The novel follows Meursault, an emotionally detached Algerian man who commits an unprovoked murder. The story examines themes of existentialism, absurdism, and the meaning of life, exploring how Meursault’s indifference to social norms and his apathetic view of existence lead to his eventual trial and condemnation. Camus's work is often considered a cornerstone of 20th-century existential philosophy, questioning the nature of human existence and morality.",
-        "cover": "images/thestranger.png",
+        "cover": "https://m.media-amazon.com/images/M/MV5BMzZhZDk5OGItYmUzZC00YTdiLWIxNWYtMmMwNmNjZjk3OGMyXkEyXkFqcGc@._V1_.jpg",
         "linkPDF": "https://www.macobo.com/essays/epdf/CAMUS,%20Albert%20-%20The%20Stranger.pdf",
         "author": {
           "fullname": "Albert Camus ",
@@ -91,7 +91,7 @@
       {
         "title": "Coders at Work",
         "description": "'Coders at Work' is a non-fiction book by Peter Seibel, published in 2009. The book consists of interviews with five prominent computer programmers: Donald Knuth, Ken Thompson, Robert Morris, Joe Armstrong, and Peter Norvig. These interviews delve into the personal experiences, thought processes, and philosophies of these influential figures in the field of software development. The book offers insight into the minds of legendary coders, covering topics such as problem-solving, programming practices, and the challenges of software engineering.",
-        "cover": "images/codersatwork.png",
+        "cover": "https://www.ibs.it/images/9781663727701_0_536_0_75.jpg",
         "linkPDF": "https://archive.org/details/B-001-000-162",
         "author": {
           "fullname": "Peter Seibel",
@@ -102,7 +102,7 @@
       {
         "title": "One Thousand and One Nights",
         "description": "'One Thousand and One Nights' (also known as 'Arabian Nights') is a collection of Middle Eastern folk tales compiled in Arabic during the Islamic Golden Age. The stories are told by the character Scheherazade, who narrates tales to her husband, King Shahryar, in order to delay her execution. The collection includes tales of adventure, magic, love, and betrayal, featuring characters such as Aladdin, Ali Baba, and Sinbad the Sailor. These stories are a cornerstone of Arabic literature and have influenced global storytelling traditions.",
-        "cover": "images/onethousandandonenights.png",
+        "cover": "https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_568,c_scale,dpr_1.5/jackets/9781408827765.jpg",
         "linkPDF": "https://nadianote.files.wordpress.com/2011/05/1001-nights.pdf",
         "author": {
           "fullname": "Anonymous",
@@ -113,7 +113,7 @@
       {
         "title": "The Alchemist",
         "description": "'The Alchemist' is an allegorical novel by Brazilian author Paulo Coelho, first published in 1988. The story follows Santiago, a young Andalusian shepherd, on his journey to discover his personal legend and fulfill his dreams. Along the way, he learns important lessons about destiny, love, and the importance of following one’s heart. The novel is filled with symbolism and has been translated into dozens of languages, becoming an international bestseller. Its themes of personal transformation and self-discovery have made it a modern classic of spiritual literature.",
-        "cover": "images/thealchemist.png",
+        "cover": "https://booksondemand.ma/cdn/shop/products/81ioPZFMeUL-min.jpg?v=1631701482",
         "linkPDF": "https://icrrd.com/public/media/15-05-2021-084550The-Alchemist-Paulo-Coelho.pdf",
         "author": {
           "fullname": "Paulo Coelho",
@@ -124,7 +124,7 @@
       {
         "title": "It",
         "description": "It' is a horror novel by Stephen King, first published in 1986. The story follows a group of children in the small town of Derry, Maine, who are terrorized by a malevolent entity known as 'It'. This entity can take on the form of whatever its victims fear most, and it primarily manifests as a terrifying clown named Pennywise. The book alternates between the children's experiences in the summer of 1958 and their return to Derry as adults in 1985 to confront the evil force that haunts the town. Themes of friendship, courage, and childhood trauma are central to the novel, as the group must confront not only the physical threat posed by 'It', but also the emotional scars left by their past.",
-        "cover": "images/it.png",
+        "cover": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982127794/it-9781982127794_hr.jpg",
         "linkPDF": "https://clicklibrary.files.wordpress.com/2018/09/it-by-stephen-king.pdf",
         "author": {
           "fullname": "Stephen King",
@@ -133,5 +133,5 @@
         "year": "1986"
       }
     ]
-  }
+  
   
