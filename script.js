@@ -66,20 +66,9 @@ function displayBooks(books) {
                       ${Array(5).fill('<ion-icon name="star-outline" aria-hidden="true"></ion-icon>').join('')}
                   </div>
               </div>
-<<<<<<< Updated upstream
           </div>`;
       booksContainer.appendChild(bookItem);
   }
-=======
-          </div>
-      </div>`;
-  booksContainer.appendChild(bookItem);
-
-  // Add event listener for "Details" button
-  bookItem.querySelector(".details").addEventListener("click", () => {
-    window.location.href = `details.html?id=${index}`;
-});
->>>>>>> Stashed changes
 }
 
 // Fetch books and display them
@@ -96,19 +85,3 @@ fetch("books.json")
   })
   .catch(error => console.error(error));
 
-<<<<<<< Updated upstream
-=======
-
-  function displayBookDetails(book) {
-    let bookDetailsContainer = document.getElement("book-details");
-    bookDetailsContainer.innerHTML = `
-        <img src="${book.cover}" alt="${book.title}">
-        <h2>${book.title}</h2>
-        <p><strong>Author:</strong> ${book.author.fullname || "Unknown"}</p>
-        <p><strong>Biography:</strong> ${book.author.biography || "Not available"}</p>
-        <p><strong>Description:</strong> ${book.description || "No description available"}</p>
-        <p><strong>Publication Year:</strong> ${book.year || "N/A"}</p>
-        <a href="index.html" class="btn">Back to Home</a>
-    `;
-  }  
->>>>>>> Stashed changes

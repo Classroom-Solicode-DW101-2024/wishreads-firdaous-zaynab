@@ -7,39 +7,92 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="header" >
     <div class="header-top">
-        <div class="container">
-  
-          <a href="#" class="logo">
-            <img src="images/logo.svg" width="138" height="28" alt="koutoubia">
-          </a>
-  
-          <div class="input-wrapper">
-            <input type="search" name="search" placeholder="Search our store" class="input-field">
-  
-            <button class="btn btn-primary">Search</button>
-          </div>
-  
-          <div class="header-action">
-  <!--iiiiiiiiiii-->
-            <button class="header-action-btn" aria-label="cart" title="Cart">
-              <span class="span">0</span>
-  
-              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-            </button>
-  
-            
-            <button class="header-action-btn" aria-label="user" title="User">
-              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-            </button>
-  
-          </div>
-  
+      <div class="container">
+
+        <a href="#" class="logo">
+          <img src="images/logo.png" width="138" height="28" alt="koutoubia">
+        </a>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Search our store" class="input-field">
+
+          <button class="btn btn-primary">Search</button>
         </div>
+
+        <div class="header-action">
+<!--iiiiiiiiiii-->
+          <button class="header-action-btn" aria-label="cart" title="Cart">
+            <span class="span">0</span>
+
+            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          
+          <button class="header-action-btn" aria-label="user" title="User">
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
       </div>
+    </div>
+
+    <div class="header-bottom" >
+      <div class="container">
+
+        <nav class="navbar">
+
+          <button class="nav-close-btn" data-nav-toggler aria-label="clsoe menu" title="Clsoe Menu">
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <div class="navbar-top">
+            <input type="search" name="search" placeholder="Search our store" class="input-field">
+
+            <button class="search-btn" aria-label="Search">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Contact</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <a href="tel:(+212)-634-56789" class="header-contact-link">
+          <ion-icon name="headset-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">(+212)-634-56789</span>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="overlay" ></div>
+  </header>
 
 
       <!--WishList-->
+      <main>
+        <section class="Wishlist" id="Wishlist">
+          <!-- Book details will be dynamically loaded here -->
+        </section>
+      </main>
 
 
       <footer class="footer has-bg-image" style="background-image: url('images/section-bg.jpg')">
@@ -50,13 +103,11 @@
             <div class="footer-brand">
     
               <a href="#" class="logo">
-                <img src="images/logo.svg" width="138" height="28" alt="booken home">
+                <img src="images/logo.png" width="138" height="28" alt="booken home">
               </a>
     
               <p class="footer-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor inci ut labore et dolore
-                consectetur
-                adipisicing elit sed do eiusmod tempor.
+                Koutoubia draws book lovers of all ages into a community, engage with booklovers and meet their favourite literary personalities..
               </p>
     
               <ul class="social-list">
