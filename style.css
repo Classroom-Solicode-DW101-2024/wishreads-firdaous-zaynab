@@ -6,12 +6,12 @@
 
   --maximum-blue-green: #FF6500;
   --selective-yellow: hsl(42, 98%, 55%);
-  --eerie-black_70: hsla(240, 1%, 14%, 0.7);
-  --granite-gray: hsl(0, 0%, 40%);
+  --eerie-black_70: #232324b3;
+  --granite-gray: #666666;
   --spanish-gray: hsl(0, 0%, 57%);
-  --oxford-blue: hsl(243, 95%, 8%);
+  --oxford-blue: #030128;
   --eerie-black: hsl(214, 10%, 14%);
-  --xiketic: hsl(240, 100%, 6%);
+  --xiketic: #00001f;
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --white_10: hsla(0, 0%, 100%, 0.1);
@@ -146,11 +146,12 @@ body {
 .container { padding-inline: 15px; }
 
 .section { padding-block: var(--section-padding); }
-
+/*BG IMAGE*/
 .has-bg-image {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /* opacity: 0.7; */
 }
 
 .h1,
