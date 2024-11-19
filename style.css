@@ -697,7 +697,7 @@ body {
   #BACK TO TOP
 \*-----------------------------------*/
 
-.back-top-btn {
+/* .back-top-btn {
   position: fixed;
   bottom: 30px;
   right: 20px;
@@ -715,7 +715,7 @@ body {
   transform: translateY(10px);
   opacity: 1;
   visibility: visible;
-}
+} */
 
 
 
@@ -1173,17 +1173,15 @@ body {
 
   .popular .has-scrollbar { padding-block-end: 50px; }
 
-
-
   /**
    * BACK TO TOP
    */
 
-  .back-top-btn {
+  /* .back-top-btn {
     bottom: 70px;
     right: 30px;
     font-size: 25px;
     padding: 15px;
   }
 
-}
+} */
