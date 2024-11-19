@@ -1,66 +1,82 @@
-const mostPopularProducts = document.querySelector(".most-popular-products");
-const jsonFile = "books.json";
+'use strict';
 
-// Function to create book cards
-function createBookCard(book) {
-    const { title, description, cover, author } = book;
-    
-    // Create a truncated description (first 100 characters)
-    const shortDescription = description.length > 100 
-        ? description.substring(0, 100) + '...' 
-        : description;
 
-    return `
-        <div class="product-card">
-            <div class="product-card__container">
-                <div class="product-card__img">
-                    <img src="${cover}" alt="${title}" />
-                </div>
-                <div class="product-card__buttons">
-                    <button class="product-card__btn wishlist" 
-                            data-tooltip="Add to wishlist">
-                        <i class="fas fa-heart"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="product-card__description">
-                <h3 class="product-card__title">${title}</h3>
-                <p class="product-card__author">By ${author.fullname}</p>
-                <p class="product-card__text">${shortDescription}</p>
-            </div>
-        </div>
-    `;
-}
 
-// Function to load and display books
-function loadBooks() {
-    try {
-        // Get the books data from your JSON
-        const books = [
-            // Your books array from the JSON file will be here
-            // For development, you can directly paste your JSON array here
-        ];
+/**
+ * add event on elements
+ */
 
-        // Display all books
-        books.forEach(book => {
-            mostPopularProducts.innerHTML += createBookCard(book);
-        });
-
-        // Add event listeners for wishlist buttons
-        const wishlistButtons = document.querySelectorAll('.product-card__btn.wishlist');
-        wishlistButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                // Toggle active class for visual feedback
-                this.classList.toggle('active');
-                // Here you can add wishlist functionality
-            });
-        });
-
-    } catch (error) {
-        console.error('Error loading books:', error);
-        mostPopularProducts.innerHTML = '<p>Error loading books. Please try again later.</p>';
+const addEventOnElem = function (elem, type, callback) {
+  if (elem.length > 1) {
+    for (let i = 0; i < elem.length; i++) {
+      elem[i].addEventListener(type, callback);
     }
+  } else {
+    elem.addEventListener(type, callback);
+  }
 }
 
-// Call the function when the document is loaded
-document.addEventListener('DOMContentLoaded', loadBooks);
+
+
+/**
+ * navbar toogle
+ */
+
+const navbar = document.querySelector("[data-navbar]");
+const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+const overlay = document.querySelector("[data-overlay]");
+
+const toggleNavbar = function () {
+  navbar.classList.toggle("active");
+  overlay.classList.toggle("active");
+}
+
+addEventOnElem(navTogglers, "click", toggleNavbar);
+
+
+
+/**
+ * active header & back top btn when window scroll down to 100px
+ */
+
+const header = document.querySelector("[data-header]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
+
+const activeElemOnScroll = function () {
+  if (window.scrollY > 100) {
+    header.classList.add("active");
+    backTopBtn.classList.add("active");
+  } else {
+    header.classList.remove("active");
+    backTopBtn.classList.remove("active");
+  }
+}
+
+addEventOnElem(window, "scroll", activeElemOnScroll);
+
+
+
+/**
+ * filter functionality
+ */
+
+const filterBtn = document.querySelectorAll("[data-filter-btn]");
+const filterItems = document.querySelectorAll("[data-filter]");
+
+let lastClickedBtn = filterBtn[0];
+
+const filter = function () {
+  lastClickedBtn.classList.remove("active");
+  this.classList.add("active");
+  lastClickedBtn = this;
+
+  for (let i = 0; i < filterItems.length; i++) {
+    if (filterItems[i].dataset.filter === this.dataset.filterBtn) {
+      filterItems[i].style.display = "block";
+    } else {
+      filterItems[i].style.display = "none";
+    }
+  }
+}
+
+addEventOnElem(filterBtn, "click", filter);
