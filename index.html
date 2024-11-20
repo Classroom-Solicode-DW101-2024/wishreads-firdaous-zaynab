@@ -35,19 +35,19 @@
     <div class="header-top">
       <div class="container">
 
-        <a href="#" class="logo">
+        <a href="#" class="logo" id="home">
           <img src="images/logo.png" width="138" height="28" alt="koutoubia">
         </a>
-
+              <!--search-->
         <div class="input-wrapper">
-          <input type="search" name="search" placeholder="Search our store" class="input-field">
+          <input oninput="search(this.value)" id="search-book" type="search" name="search" placeholder="Search our store" class="input-field">
 
           <button class="btn btn-primary">Search</button>
         </div>
 
         <div class="header-action">
-<!--iiiiiiiiiii-->
-          <button class="header-action-btn" aria-label="cart" title="Cart">
+              <!--wishlist-->
+          <button class="header-action-btn" aria-label="cart" title="Cart" id="wishlist">
             <span class="span">0</span>
 
             <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
@@ -83,7 +83,7 @@
           <ul class="navbar-list">
 
             <li>
-              <a href="#" class="navbar-link">Home</a>
+              <a href="#" class="navbar-link" id="home" class="logo">Home</a>
             </li>
 
             <li>
@@ -98,10 +98,10 @@
 
         </nav>
 
-        <a href="tel:(+212)-634-56789" class="header-contact-link">
+        <a href="tel:(+212)-66666-66-66" class="header-contact-link">
           <ion-icon name="headset-outline" aria-hidden="true"></ion-icon>
 
-          <span class="span">(+212)-634-56789</span>
+          <span class="span">(+212)-66666-66-66</span>
         </a>
 
       </div>
@@ -111,6 +111,8 @@
   </header>
 
 
+
+<br><br><br><br>
 
 
 

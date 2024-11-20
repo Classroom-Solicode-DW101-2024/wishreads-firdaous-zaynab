@@ -1,8 +1,14 @@
-
   document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
-    const bookId = params.get("id"); // Assuming the book ID is passed as a URL parameter, e.g., ?id=1
+    const bookId = params.get("id"); //the book id id=1
+    const logo = document.querySelector('.logo');
 
+    logo.addEventListener('click', () => {
+      console.log(logo);
+      
+        window.location.href = 'index.html';
+        
+    })
     fetch("books.json")
       .then(response => {
         if (!response.ok) {
@@ -11,7 +17,7 @@
         return response.json();
       })
       .then(books => {
-        const book = books[bookId]; // Get the book details by ID
+        const book = books[bookId]; // Get the book details by id
         if (book) {
           displayBookDetails(book);
         } else {
@@ -32,10 +38,13 @@
         <p class="book-author"><strong>Author:</strong> ${book.author.fullname || "Unknown"}</p>
         <p class="book-bio"><strong>Biography:</strong> ${book.author.biography || "No biography available."}</p>
         <p class="book-description"><strong>Description:</strong> ${book.description || "No description available."}</p>
-        <p class="book-year"><strong>Publication Year:</strong> ${book.year || "N/A"}</p>
+        <p class="book-year"><strong>Publication Year:</strong> ${book.year || "unknown"}</p>
         </div>
       </div>
       </section>
     `;
+    
+
   }
 
+ 
