@@ -644,16 +644,15 @@ body {
 \*-----------------------------------*/
 
 /**
- * responsive for large than 575px screen
+ * responsive for large than 500px screen
  */
 
-@media (min-width: 575px) {
-
+@media (min-width: 500px) {
   /**
    * REUSED STYLE
    */
 
-  .container {
+   .container {
     max-width: 540px;
     width: 100%;
     margin-inline: auto;
@@ -694,18 +693,6 @@ body {
   .hero { padding-block-start: 150px; }
 
 }
-
-
-/**
- * responsive for large than 768px screen
- */
-
-@media (min-width: 768px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
 
     /**
@@ -809,21 +796,6 @@ body {
 
   .footer-bottom .w-100 { margin-inline: 0; }
 
-}
-
-
-
-
-
-/**
- * responsive for large than 992px screen
- */
-
-@media (min-width: 992px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
 
   :root {
 
@@ -1004,17 +976,6 @@ body {
 
   .footer-brand { padding-inline-end: 40px; }
 
-}
-
-
-
-
-
-/**
- * responsive for large than 1200px screen
- */
-
-@media (min-width: 700px) {
 
   /**
    * CUSTOM PROPERTY
@@ -1025,12 +986,8 @@ body {
     /**
      * typography
      */
-
     --fs-1: 7rem;
-
   }
-
-
 
   /**
    * REUSED STYLE
@@ -1053,30 +1010,22 @@ body {
 
   .navbar-list { gap: 50px; }
 
-
-
   /**
    * HERO
    */
-
   .hero-text { font-size: var(--fs-5); }
-
-
 
   /**
    * FEATURE
    */
-
   .feature .grid-list { grid-template-columns: repeat(4, 1fr); }
 
   .feature-card { height: 100%; }
 
 
-
   /**
    * OFFER
    */
-
   .offer .container { max-width: 700px; }
 
 
@@ -1084,26 +1033,11 @@ body {
   /**
    * POPULAR
    */
-
   .popular .scrollbar-item {
     min-width: calc(25% - 22.5px);
     width: calc(25% - 22.5px);
   }
-
   .popular .has-scrollbar { padding-block-end: 50px; }
-
-  /**
-   * BACK TO TOP
-   */
-
-  /* .back-top-btn {
-    bottom: 70px;
-    right: 30px;
-    font-size: 25px;
-    padding: 15px;
-  }
-
-} */
 
 
 /**BOOK DETAILS**/
@@ -1134,6 +1068,35 @@ body {
   color: var(--maximum-blue-green);
   margin-bottom: 20px;
 }
+.book-details .container {
+  flex-direction: row;
+  text-align: left;
+  justify-content: center;
+  gap: 40px;
+}
+
+.book-cover {
+  margin-bottom: 0;
+  max-width: 240px;
+}
+
+.book-info {
+  flex: 1;
+}
+.book-details {
+  padding: 40px;
+}
+
+.book-title {
+  font-size: var(--fs-3);
+}
+
+.book-author,
+.book-bio,
+.book-description,
+.book-year {
+  font-size: var(--fs-6);
+}
 
 .book-author,
 .book-bio,
@@ -1148,47 +1111,8 @@ body {
 .book-bio strong,
 .book-description strong,
 .book-year strong {
-  color: #FF6500;
+  color: #FF6500;}
   
-}
-
-@media (min-width: 768px) {
-  .book-details .container {
-    flex-direction: row;
-    text-align: left;
-    justify-content: center;
-    gap: 40px;
-  }
-
-  .book-cover {
-    margin-bottom: 0;
-  }
-
-  .book-info {
-    flex: 1;
-  }
-}
-
-@media (min-width: 992px) {
-  .book-details {
-    padding: 40px;
-  }
-
-  .book-cover {
-    max-width: 240px;
-  }
-
-  .book-title {
-    font-size: var(--fs-3);
-  }
-
-  .book-author,
-  .book-bio,
-  .book-description,
-  .book-year {
-    font-size: var(--fs-6);
-  }
-}
 
 
 /*DELETE AND READ*/
