@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     tbody.innerHTML = ""; // Clear table content
     wishlistData.forEach((book, index) => {
       tbody.innerHTML += `
-      <br><br><br><br><br><br><br><br><br><br><br><br>
+      
           <tr>
             <td><img src="${book.cover}"  class="book-cover"></td>
             <td><h1 class="book-title">${book.title}</h3></td>

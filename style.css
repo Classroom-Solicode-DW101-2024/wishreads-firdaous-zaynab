@@ -324,7 +324,7 @@ body {
 .header-contact-link { display: none; }
 
 .header {
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -343,7 +343,7 @@ body {
   100% { transform: translateY(0); }
 }
 
-.header-top { padding-block: 25px; }
+
 
 .header-top .container {
   display: flex;
@@ -484,6 +484,7 @@ body {
 .hero-banner {
   max-width: 300px;
   margin-inline: auto;
+  max-width: unset;
 }
 
 
@@ -876,8 +877,9 @@ body {
   }
 
   .header-top {
-    padding-block: 20px;
-    border-block-end: 1px solid var(--white_10);
+    
+    padding-block: 1px;
+    border-block-end: var(--white_10);
   }
 
   .input-field {
