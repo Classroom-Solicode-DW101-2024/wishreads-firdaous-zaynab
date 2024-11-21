@@ -170,7 +170,7 @@ body {
 }
 
 .btn {
-  font-size: var(--fs-4);
+  font-size: var(--fs-3);
   font-weight: var(--fw-500);
   max-width: max-content;
   border: 1px solid var(--white-1);
@@ -178,7 +178,7 @@ body {
   align-items: center;
   gap: 20px;
   padding: 18px 30px;
-  border-radius: var(--radius-pill);
+  border-radius: 100px;
   transition: var(--transition-1);
   animation: pulse 1.5s ease infinite;
 }
@@ -360,7 +360,7 @@ body {
 
 .header-action-btn,
 .nav-open-btn {
-  font-size: 24px;
+  font-size: 45px;
   transition: var(--transition-1);
 }
 
