@@ -76,21 +76,10 @@ updateBadgeCounter();
 // Fetch and display books on page load
 fetchAndDisplayBooks();
 
-// Fetch books and display them
-// fetch("books.json")
-//   .then((response) => {
-//     if (!response.ok) {
-//       throw new Error("Error fetching data");
-//     }
-//     return response.json();
-//   })
-//   .then((data) => {
-//     books = data;
-//     displayBooks(books); // Pass books array to the function
-//   })
-//   .catch((error) => console.error(error));
 
 const searchBook = document.querySelector("#search-book");
+
+
 /**SEARCH BOOKS */
 function search(value) {
   let data = books;
@@ -105,12 +94,8 @@ function search(value) {
                     <img src="${data[i].cover}" class="book-cover">
                         <div class="book-info">
                         <h1 class="book-title">${data[i].title}</h1>
-                        
                         <p class="book-author" style="margin: 10px 0">${
                           data[i].author.fullname || "unknown"
-                        }</p>
-                        <p class="book-bio" style="margin: 10px 0">${
-                          data[i].author.biography || "No biography available."
                         }</p>
                         <p class="book-description" style="margin: 10px 0">${
                           data[i].description || "No description available."
@@ -118,10 +103,10 @@ function search(value) {
                         <p class="book-year" style="margin: 10px 0">${
                           data[i].year || "unknown."
                         }</p>
-                       
-                </div>
-                    <span class="wishlist">Add to wishlist</span>
-                </div>
+                        
+                        <button class="btn" aria-label="Add to Wishlist" title="Add to Wishlist" onclick="addToWishlist(${i})">
+                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                        </button>
             </section>    
             `;
 

@@ -219,7 +219,8 @@ body {
 \*-----------------------------------*/
 .product-card {
   position: relative;
-  border: 1px solid var(--white_10);
+  /* border: 1px solid var(--white_10); */
+  /* border-radius: var(--radius-circle); */
 }
 
 .product-card .card-badge {
@@ -232,7 +233,7 @@ body {
   font-weight: var(--fw-700);
   text-transform: uppercase;
   padding: 3px 8px;
-  border-radius: var(--radius-pill);
+  border-radius: 80px;
 }
 
 .product-card .card-banner { position: relative; }

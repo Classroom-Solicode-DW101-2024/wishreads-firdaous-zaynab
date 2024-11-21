@@ -41,9 +41,7 @@
         <p class="book-year"><strong>Publication Year:</strong> ${book.year || "unknown"}</p>
         <a href="${book.linkPDF}" class="btn">read</a>
         </div>
-       
-                
-                
+        
       </div>
       </section>
     `;

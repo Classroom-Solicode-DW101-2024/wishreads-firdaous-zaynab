@@ -34,15 +34,15 @@
         "year": "1923"
       },
       {
-        "title": "Le Pain Nuu",
-        "description": "'Le Pain Nu' (The Naked Bread) is an autobiographical novel by Moroccan author Mohamed Choukri. The book chronicles Choukri's difficult childhood in Tangier, marked by poverty, hunger, and hardship.",
-        "cover": "https://alifbata.fr/wp-content/uploads/2020/02/Couv-LE-PAIN-NU-_-bd.jpg",
-        "linkPDF": "https://www.scribd.com/doc/80764434/Mohamed-Choukri-Le-Pain-Nu",
+        "title": "You Don't Know JS: Async & Performance",
+        "description": "This book covers asynchronous programming patterns in JavaScript, including callbacks, promises, generators, and performance optimization techniques. It helps developers write more efficient and maintainable asynchronous code.",
+        "cover": "https://m.media-amazon.com/images/I/51Kb27EcNPL._SX331_BO1,204,203,200_.jpg",
+        "linkPDF": "https://api.pageplace.de/preview/DT0400.9781491905210_A24112927/preview-9781491905210_A24112927.pdf",
         "author": {
-          "fullname": "Mohamed Choukri",
-          "biography": "Mohamed Choukri (1935–2003) was a Moroccan writer, most famous for his autobiographical works. His life was marked by hardship, including a difficult childhood in poverty. "
+          "fullname": "Kyle Simpson",
+          "biography": "Kyle Simpson is a software engineer and educator who has contributed significantly to JavaScript development and education. He's an author, workshop trainer, tech speaker, and open-source contributor."
         },
-        "year": "1973"
+        "year": "2015"
       },
       {
         "title": "The Little Prince",
@@ -67,15 +67,15 @@
         "year": "1966"
       },
       {
-        "title": "The House of the Spirits",
-        "description": "The House of the Spirits' is a novel by Chilean author Isabel Allende, first published in 1982. The book blends elements of magical realism and historical fiction, following the lives of the Trueba family over several generations.",
-        "cover": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781501117015/the-house-of-the-spirits-9781501117015_hr.jpg",
-        "linkPDF": "https://books-library.net/files/books-library.online-01150916Fz1J5.pdf",
+        "title": "Life in Code: A Personal History of Technology",
+        "description": "A fascinating memoir that weaves together personal stories with insights about programming, artificial intelligence, and the evolution of Silicon Valley from the 1990s to today.",
+        "cover": "https://m.media-amazon.com/images/I/71XjzLv4AnL._AC_UF1000,1000_QL80_.jpg",
+        "linkPDF": "https://sci-hub.se/downloads/2019-02-15/53/cooper2019.pdf",
         "author": {
-          "fullname": "Isabel Allende",
-          "biography": "Isabel Allende is a Chilean-American writer known for her works of magical realism and historical fiction. Born in 1942, she gained international fame with her debut novel, 'The House of the Spirits'. Allende’s works often explore themes such as politics, family, love, and memory."
+          "fullname": "Ellen Ullman",
+          "biography": "Ellen Ullman is a former software engineer who started programming in 1978. She writes about the human side of technology and its impact on society."
         },
-        "year": "1982"
+        "year": "2017"
       },
       {
         "title": "The Stranger",
