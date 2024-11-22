@@ -110,6 +110,7 @@ function search(value) {
                       <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                   </button>
               </div>
+              </div>
           
           <br>
           <div class="card-content">
