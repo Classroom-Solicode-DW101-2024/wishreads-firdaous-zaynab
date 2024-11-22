@@ -1,6 +1,6 @@
 const booksContainer = document.getElementById("grid-list");
-const searchBook = document.querySelector("#search-book");
 
+//***fetchiiing */
 function fetchAndDisplayBooks() {
   fetch("books.json")
     .then((response) => {
@@ -17,6 +17,8 @@ function fetchAndDisplayBooks() {
     });
 }
 
+
+////************FUNCTION displayBooks */
 function displayBooks(books) {
   booksContainer.innerHTML = "";
 
@@ -26,7 +28,7 @@ function displayBooks(books) {
       <div class="product-card">
           <span class="card-badge">New</span>
           <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-              <img src="${book.cover}" width="384" height="480" loading="lazy" alt="${book.title}" class="img-cover">
+              <img src="${book.cover}" width="384" height="480" loading="lazy" class="img-cover">
               <div class="card-action">
                   <a href="details.html?id=${i}" class="action-btn details" aria-label="Quick View" title="Quick View">
                       <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
@@ -36,6 +38,7 @@ function displayBooks(books) {
                   </button>
               </div>
           </div>
+          <br>
           <div class="card-content">
               <h2 class="card-title h3">${book.title}</h2>
               <h2 class="book-author">${book.author?.fullname || "Unknown Author"}</h2>
@@ -46,6 +49,9 @@ function displayBooks(books) {
 
   window.books = books; // Save books globally
 }
+
+
+/****************FUNCTION AddToWishList */
 
 function addToWishlist(bookIndex) {
   const book = window.books[bookIndex];
@@ -60,11 +66,20 @@ function addToWishlist(bookIndex) {
   }
 }
 
+
+
+/** FUNCTION IPDATEBADGECOUNTER*/
+
 function updateBadgeCounter() {
   let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
   const badge = document.querySelector(".count");
   badge.textContent = wishlist.length;
 }
+
+/****************FUNCTION SEARCH */
+
+const searchBook = document.querySelector("#search-book");
+
 
 function search(value) {
   booksContainer.innerHTML = "";
@@ -84,7 +99,7 @@ function search(value) {
       <div class="product-card">
           <span class="card-badge">New</span>
           <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-              <img src="${book.cover}" width="384" height="480" loading="lazy" alt="${book.title}" class="img-cover">
+              <img src="${book.cover}" width="384" height="480" loading="lazy" class="img-cover">
               <div class="card-action">
                   <a href="details.html?id=${i}" class="action-btn details" aria-label="Quick View" title="Quick View">
                       <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
@@ -93,7 +108,8 @@ function search(value) {
                       <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                   </button>
               </div>
-          </div>
+          
+          <br>
           <div class="card-content">
               <h2 class="card-title h3">${book.title}</h2>
               <h2 class="book-author">${book.author?.fullname || "Unknown Author"}</h2>
