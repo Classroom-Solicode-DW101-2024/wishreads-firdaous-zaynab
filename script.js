@@ -54,7 +54,9 @@ function displayBooks(books) {
 /****************FUNCTION AddToWishList */
 
 function addToWishlist(bookIndex) {
+  //bring
   const book = window.books[bookIndex];
+  
   let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 
   if (!wishlist.some((wish) => wish.title === book.title)) {
